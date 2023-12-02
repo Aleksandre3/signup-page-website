@@ -1,0 +1,88 @@
+@import "./colors.css";
+@import "./font.css";
+
+body {
+  background-color: var(--backgroundColor);
+  font-size: 0.9375rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: var(--ff-main);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.card {
+  width: 538px;
+  padding: 40px;
+  background-color: var(--whiteColor);
+  border-radius: 26px;
+  border: 1px solid #d6d6d6;
+}
+
+.title {
+  font-size: 2.1875rem;
+}
+
+.title-text {
+  color: var(--textColor2);
+  font-size: 1rem;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  margin: 45px 0 28px 0;
+}
+
+.input-container input {
+  border-radius: 10px;
+  border: 1px solid #eaeaea;
+  background: #fff;
+  padding: 23px;
+  color: var(--inputText);
+}
+
+input[type="email"] {
+  color: var(--textColor);
+  box-shadow: 0px 10px 40px 0px rgba(174, 174, 174, 0.2);
+}
+
+.check-container {
+  display: flex;
+  align-items: center;
+  gap: 16.82px;
+}
+input[type="checkbox"] {
+  width: 21px;
+  height: 21px;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+  align-items: center;
+}
+
+.cont-btn {
+  width: 100%;
+  padding: 20px 0 20px 0;
+  color: var(--whiteColor);
+  border-radius: 10px;
+  border: 1px solid #eaeaea;
+  background: #0016df;
+  box-shadow: 0px 10px 40px 0px rgba(174, 174, 174, 0.2);
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.cont-btn:hover {
+  background: #3041d6;
+}
